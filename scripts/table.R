@@ -22,7 +22,7 @@ file_out2 <- here::here("data/wordcloud.html")
 
 # Code
 
-# profvis({
+profvis({
 
 
 html <- read_html(url)
@@ -167,7 +167,7 @@ htmlwidgets::saveWidget(wordcloud2::wordcloud2(description_freq_terms[,1:2], sha
 
 rmarkdown::render("index.Rmd", output_dir = "docs/")
 
-# })
+}, prof_output = "data/logs/") # to capture performance profiling with each run
 
 
 

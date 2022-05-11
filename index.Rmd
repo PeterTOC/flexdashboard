@@ -95,7 +95,7 @@ gauge(hit_to_miss_ratio[[1]], min = 0, max = 100, symbol = '%', gaugeSectors(
 ### Job Description WordCloud
 
 
-```{r picture, echo=FALSE, fig.cap="What are today's buzz words..", out.width = '100%'}
+```{r picture, echo=FALSE, fig.cap="ETL project, Author: Peter Boshe https://peterboshe.netlify.app/", out.width = '100%'}
 
 webshot::webshot(wordcloud_image,vwidth = 1500, vheight = 1250, delay =3)
 ```
