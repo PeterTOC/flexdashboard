@@ -1,0 +1,104 @@
+---
+title: "Entry Level Data Science Roles"
+output: 
+  flexdashboard::flex_dashboard:
+    theme: 
+      version: 4
+      bootswatch: united
+    orientation: columns
+    vertical_layout: fill
+---
+
+
+
+```{r setup, include=FALSE}
+library(flexdashboard)
+library(tidyverse)
+require(bslib)
+require(DT)
+require(webshot)
+require(here)
+require(htmltools)
+require(htmlwidgets)
+
+# parameters
+
+file_raw <- here::here("../web_scrape/data/table.rds")
+wordcloud_image <- here::here("../web_scrape/data/wordcloud.html")
+
+```
+
+
+
+
+Column {data-width=720}
+-----------------------------------------------------------------------
+
+
+### Scraped job posts  
+
+```{r table}
+df <- read_rds(file_raw)
+
+create_dt <- function(x){
+  DT::datatable(x,
+                extensions = 'Buttons',
+                options = list(dom = 'Btrp',   # Blfrtip
+                               buttons = c('copy', 'csv', 'excel', 'pdf', 'print'),
+                               lengthMenu = list(c(25,50,75,-1),
+                                                 c(25,50,75,"All"))),
+                escape = FALSE)
+}
+
+df |> 
+  dplyr::select(-job_description) |> 
+  dplyr::rename(hit = r_present,
+         hit_count = count_r) |> 
+  dplyr::mutate(link = paste0("<a href='",df$url_link,"'>",df$url_link,"</a>")) |> 
+  dplyr::select(-url_link) |>
+  create_dt()
+
+
+```
+
+Column {data-width=280}
+-----------------------------------------------------------------------
+
+### Passion Hits
+
+```{r hits}
+df |> 
+  dplyr::filter(count_r > 0) |> 
+  count() -> hits
+
+valueBox(hits, icon = "fa-comments")
+```
+
+### Hit to Miss Ratio
+
+```{r marketability}
+df |>
+  count(r_present) |>
+  dplyr::mutate(prop_pct = round((n / sum(n)) * 100),0) |>
+  dplyr::filter(r_present == TRUE) |>
+  dplyr::select(prop_pct) -> hit_to_miss_ratio
+
+# valueBox(hit_to_miss_ratio, icon = "fa-pencil")
+
+
+gauge(hit_to_miss_ratio[[1]], min = 0, max = 100, symbol = '%', gaugeSectors(
+  success = c(80, 100), warning = c(40, 79), danger = c(0, 39)
+))
+```
+
+
+### Job Description WordCloud
+
+
+```{r picture, echo=FALSE, fig.cap="What are today's buzz words..", out.width = '100%'}
+
+webshot::webshot(wordcloud_image,vwidth = 1500, vheight = 1250, delay =3)
+```
+
+
+
