@@ -23,8 +23,8 @@ require(htmlwidgets)
 
 # parameters
 
-file_raw <- here::here("../web_scrape/data/table.rds")
-wordcloud_image <- here::here("../web_scrape/data/wordcloud.html")
+file_raw <- here::here("data/table.rds")
+wordcloud_image <- here::here("data/wordcloud.html")
 
 ```
 
