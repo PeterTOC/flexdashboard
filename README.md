@@ -2,7 +2,7 @@
 
 > The code files of interest would be;
 >  - The scraping script labeled "table.R" 
->  - The code for the dashboard layout labelled "flexdashboard.Rmd"
+>  - The code for the dashboard layout labelled "index.Rmd"
 
 
 ## Check out my ETL project,
