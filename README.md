@@ -1,4 +1,4 @@
-# flexdashboard
+# Job Board Project
 
 > The code files of interest would be;
 >  - The scraping script labeled "table.R" 
