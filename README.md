@@ -4,7 +4,6 @@
 >  - The scraping script labeled "table.R" 
 >  - The code for the dashboard layout labelled "index.Rmd"
 
->  - The code for the dashboard layout labelled "index.Rmd"
 
 A great resoure on setting up the project locally and on github can be found [here](https://www.r-bloggers.com/2020/09/deploying-flexdashboard-on-github-pages/)
 
