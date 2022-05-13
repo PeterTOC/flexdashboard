@@ -36,6 +36,7 @@ Loading:
 
 - features included; clickable links to the original job posts, a downloadable data table, and most importantly, the developer's option to automate the process.
 
+![dashboard](https://github.com/PeterTOC/flexdashboard/blob/master/docs/dashboard-20220512110924-1920x941.png)
 
 
 Summary of layout;
@@ -51,3 +52,5 @@ Summary of layout;
 Tech Stack: R, Git, Github
 
 NOTE: Web scraping should always be done as a last resort, APIs and databases, when available, is always the way to go.
+
+![wordcloud](https://github.com/PeterTOC/flexdashboard/blob/master/docs/webshot.png)
