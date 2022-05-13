@@ -5,7 +5,10 @@
 >  - The code for the dashboard layout labelled "index.Rmd"
 
 
-## Check out my ETL project,
+A great resoure on setting up the project locally and on github can be found [here](https://www.r-bloggers.com/2020/09/deploying-flexdashboard-on-github-pages/)
+
+
+## About the ETL project,
 
 
 
