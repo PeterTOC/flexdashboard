@@ -6,7 +6,6 @@
 # Packages
 library(tidyverse)
 library(rvest)
-library(profvis)
 library(httr)
 library(broom)
 require(wordcloud2)
@@ -17,12 +16,15 @@ url <- "https://www.indeed.com/jobs?q=entry%20level%20data%20scientist&l=Remote&
 domain <- "https://www.indeed.com"
 file_out <- here::here("data/table.rds")
 file_out2 <- here::here("data/wordcloud.html")
+report <- here::here("index.Rmd")
+html_output <- here:: here("docs/")
+log_output <- here::here("data/logs/")
 
 # ============================================================================
 
 # Code
 
-# profvis({
+
 
 
 html <- read_html(url)
@@ -165,9 +167,9 @@ htmlwidgets::saveWidget(wordcloud2::wordcloud2(description_freq_terms[,1:2], sha
 
 # knit report
 
-rmarkdown::render("index.Rmd", output_dir = "docs/")
+rmarkdown::render(report, output_dir = html_output)
 
-# })
+
 
 
 
