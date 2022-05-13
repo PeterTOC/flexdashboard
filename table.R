@@ -169,7 +169,8 @@ htmlwidgets::saveWidget(wordcloud2::wordcloud2(description_freq_terms[,1:2], sha
 
 rmarkdown::render(report, output_dir = html_output)
 
-
+# clean environment
+rm(list = ls())
 
 
 
