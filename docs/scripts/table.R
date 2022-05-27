@@ -6,7 +6,6 @@
 # Packages
 library(tidyverse)
 library(rvest)
-library(profvis)
 library(httr)
 library(broom)
 require(wordcloud2)
@@ -17,15 +16,19 @@ url <- "https://www.indeed.com/jobs?q=entry%20level%20data%20scientist&l=Remote&
 domain <- "https://www.indeed.com"
 file_out <- here::here("data/table.rds")
 file_out2 <- here::here("data/wordcloud.html")
+report <- here::here("index.Rmd")
+html_output <- here:: here("docs/")
+log_output <- here::here("data/logs/")
 
 # ============================================================================
 
 # Code
 
-profvis({
 
 
-html <- read_html(url)
+html <- url |>
+  GET(timeout(60)) |>
+  read_html()
 
 
 job_title <- html |>
@@ -68,7 +71,10 @@ extract_description <- function(x) {
 
   cat(".") # stone age progress bar
 
-  html2 <- read_html(x)
+  # html2 <- read_html(x)
+  html2 <- x |>
+    GET(timeout(60)) |> # important to not get timed out in some of the requests
+    read_html()
 
   job_description <- html2 |>
     html_nodes(xpath = '//*[@id="jobDescriptionText"]') |>
@@ -114,6 +120,7 @@ write_rds(indeed_df,file_out)
 
 df <- indeed_df
 
+# text mining
 # create corpus function
 corpus_tm <- function(x){
   corpus_tm <- Corpus(VectorSource(x))
@@ -165,10 +172,10 @@ htmlwidgets::saveWidget(wordcloud2::wordcloud2(description_freq_terms[,1:2], sha
 
 # knit report
 
-rmarkdown::render("index.Rmd", output_dir = "docs/")
-
-}, prof_output = "data/logs/") # to capture performance profiling with each run
+rmarkdown::render(report, output_dir = html_output)
 
 
+# clean environment
+rm(list = ls())
 
 

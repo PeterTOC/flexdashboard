@@ -165,3 +165,733 @@ Output created: docs/index.html
 Warning message:
 In file(con, "r") :
   file("") only supports open = "w+" and open = "w+b": using the former
+── Attaching packages ─────────────────────────────────────── tidyverse 1.3.0 ──
+✔ ggplot2 3.3.6     ✔ purrr   0.3.4
+✔ tibble  3.1.7     ✔ dplyr   1.0.9
+✔ tidyr   1.2.0     ✔ stringr 1.4.0
+✔ readr   1.4.0     ✔ forcats 0.5.1
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+Loading required package: xml2
+
+Attaching package: ‘rvest’
+
+The following object is masked from ‘package:purrr’:
+
+    pluck
+
+The following object is masked from ‘package:readr’:
+
+    guess_encoding
+
+Loading required package: wordcloud2
+Loading required package: tm
+Loading required package: NLP
+
+Attaching package: ‘NLP’
+
+The following object is masked from ‘package:httr’:
+
+    content
+
+The following object is masked from ‘package:ggplot2’:
+
+    annotate
+
+...............Warning messages:
+1: In tm_map.SimpleCorpus(corpus_descriptions, removePunctuation) :
+  transformation drops documents
+2: In tm_map.SimpleCorpus(tm_map(corpus_descriptions, removePunctuation),  :
+  transformation drops documents
+3: In tm_map.SimpleCorpus(tm_map(tm_map(corpus_descriptions, removePunctuation),  :
+  transformation drops documents
+4: In tm_map.SimpleCorpus(tm_map(tm_map(tm_map(corpus_descriptions,  :
+  transformation drops documents
+5: In tm_map.SimpleCorpus(tm_map(tm_map(tm_map(tm_map(corpus_descriptions,  :
+  transformation drops documents
+6: In tm_map.SimpleCorpus(tm_map(tm_map(tm_map(tm_map(tm_map(corpus_descriptions,  :
+  transformation drops documents
+7: In tm_map.SimpleCorpus(tm_map(tm_map(tm_map(tm_map(tm_map(tm_map(corpus_descriptions,  :
+  transformation drops documents
+Error in abs_path(input) : The file 'index.Rmd' does not exist.
+Calls: <Anonymous> -> setwd -> dirname -> abs_path
+In addition: Warning message:
+In normalizePath(path, winslash = winslash, mustWork = mustWork) :
+  path[1]="index.Rmd": No such file or directory
+Execution halted
+── Attaching packages ─────────────────────────────────────── tidyverse 1.3.0 ──
+✔ ggplot2 3.3.6     ✔ purrr   0.3.4
+✔ tibble  3.1.7     ✔ dplyr   1.0.9
+✔ tidyr   1.2.0     ✔ stringr 1.4.0
+✔ readr   1.4.0     ✔ forcats 0.5.1
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+Loading required package: xml2
+
+Attaching package: ‘rvest’
+
+The following object is masked from ‘package:purrr’:
+
+    pluck
+
+The following object is masked from ‘package:readr’:
+
+    guess_encoding
+
+Loading required package: wordcloud2
+Loading required package: tm
+Loading required package: NLP
+
+Attaching package: ‘NLP’
+
+The following object is masked from ‘package:httr’:
+
+    content
+
+The following object is masked from ‘package:ggplot2’:
+
+    annotate
+
+Error in Rprof(prof_output, interval = interval, line.profiling = TRUE,  : 
+  Rprof: cannot open profile file 'data/logs/'
+Calls: profvis -> Rprof
+Execution halted
+── Attaching packages ─────────────────────────────────────── tidyverse 1.3.0 ──
+✔ ggplot2 3.3.6     ✔ purrr   0.3.4
+✔ tibble  3.1.7     ✔ dplyr   1.0.9
+✔ tidyr   1.2.0     ✔ stringr 1.4.0
+✔ readr   1.4.0     ✔ forcats 0.5.1
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+Loading required package: xml2
+
+Attaching package: ‘rvest’
+
+The following object is masked from ‘package:purrr’:
+
+    pluck
+
+The following object is masked from ‘package:readr’:
+
+    guess_encoding
+
+Loading required package: wordcloud2
+Loading required package: tm
+Loading required package: NLP
+
+Attaching package: ‘NLP’
+
+The following object is masked from ‘package:httr’:
+
+    content
+
+The following object is masked from ‘package:ggplot2’:
+
+    annotate
+
+Error in Rprof(prof_output, interval = interval, line.profiling = TRUE,  : 
+  Rprof: cannot open profile file '/home/pedro/data/logs/'
+Calls: profvis -> Rprof
+Execution halted
+── Attaching packages ─────────────────────────────────────── tidyverse 1.3.0 ──
+✔ ggplot2 3.3.6     ✔ purrr   0.3.4
+✔ tibble  3.1.7     ✔ dplyr   1.0.9
+✔ tidyr   1.2.0     ✔ stringr 1.4.0
+✔ readr   1.4.0     ✔ forcats 0.5.1
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+Loading required package: xml2
+
+Attaching package: ‘rvest’
+
+The following object is masked from ‘package:purrr’:
+
+    pluck
+
+The following object is masked from ‘package:readr’:
+
+    guess_encoding
+
+Loading required package: wordcloud2
+Loading required package: tm
+Loading required package: NLP
+
+Attaching package: ‘NLP’
+
+The following object is masked from ‘package:httr’:
+
+    content
+
+The following object is masked from ‘package:ggplot2’:
+
+    annotate
+
+...............Error in `list_sizes()`:
+! `x$error` must be a vector, not a <simpleError/error/condition> object.
+Backtrace:
+     ▆
+  1. ├─dplyr::arrange(...)
+  2. ├─tidyr::unnest(unnest(listed_df, description), description)
+  3. ├─tidyr:::unnest.data.frame(unnest(listed_df, description), description)
+  4. │ └─tidyr::unchop(data, any_of(cols), keep_empty = keep_empty, ptype = ptype)
+  5. │   └─tidyr:::df_unchop(cols, ptype = ptype, keep_empty = keep_empty)
+  6. │     └─tidyr:::list_init_empty(x = col, null = TRUE, typed = keep_empty)
+  7. │       └─vctrs::list_sizes(x)
+  8. └─vctrs:::stop_scalar_type(`<fn>`(`<smplErrr>`), "x$error", `<env>`)
+  9.   └─vctrs:::stop_vctrs(...)
+ 10.     └─rlang::abort(message, class = c(class, "vctrs_error"), ..., call = vctrs_error_call(call))
+There were 12 warnings (use warnings() to see them)
+Execution halted
+── Attaching packages ─────────────────────────────────────── tidyverse 1.3.0 ──
+✔ ggplot2 3.3.6     ✔ purrr   0.3.4
+✔ tibble  3.1.7     ✔ dplyr   1.0.9
+✔ tidyr   1.2.0     ✔ stringr 1.4.0
+✔ readr   1.4.0     ✔ forcats 0.5.1
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+Loading required package: xml2
+
+Attaching package: ‘rvest’
+
+The following object is masked from ‘package:purrr’:
+
+    pluck
+
+The following object is masked from ‘package:readr’:
+
+    guess_encoding
+
+Loading required package: wordcloud2
+Loading required package: tm
+Loading required package: NLP
+
+Attaching package: ‘NLP’
+
+The following object is masked from ‘package:httr’:
+
+    content
+
+The following object is masked from ‘package:ggplot2’:
+
+    annotate
+
+...............Warning message:
+In for (i in seq_len(n)) { :
+  closing unused connection 3 (https://www.indeed.com/rc/clk?jk=838de28caafde864&fccid=1643dd6866c4fc47&vjs=3)
+Error in `list_sizes()`:
+! `x$error` must be a vector, not a <simpleError/error/condition> object.
+Backtrace:
+     ▆
+  1. ├─dplyr::arrange(...)
+  2. ├─tidyr::unnest(unnest(listed_df, description), description)
+  3. ├─tidyr:::unnest.data.frame(unnest(listed_df, description), description)
+  4. │ └─tidyr::unchop(data, any_of(cols), keep_empty = keep_empty, ptype = ptype)
+  5. │   └─tidyr:::df_unchop(cols, ptype = ptype, keep_empty = keep_empty)
+  6. │     └─tidyr:::list_init_empty(x = col, null = TRUE, typed = keep_empty)
+  7. │       └─vctrs::list_sizes(x)
+  8. └─vctrs:::stop_scalar_type(`<fn>`(`<smplErrr>`), "x$error", `<env>`)
+  9.   └─vctrs:::stop_vctrs(...)
+ 10.     └─rlang::abort(message, class = c(class, "vctrs_error"), ..., call = vctrs_error_call(call))
+Execution halted
+── Attaching packages ─────────────────────────────────────── tidyverse 1.3.0 ──
+✔ ggplot2 3.3.6     ✔ purrr   0.3.4
+✔ tibble  3.1.7     ✔ dplyr   1.0.9
+✔ tidyr   1.2.0     ✔ stringr 1.4.0
+✔ readr   2.1.2     ✔ forcats 0.5.1
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+Loading required package: xml2
+
+Attaching package: ‘rvest’
+
+The following object is masked from ‘package:purrr’:
+
+    pluck
+
+The following object is masked from ‘package:readr’:
+
+    guess_encoding
+
+Loading required package: wordcloud2
+Loading required package: tm
+Loading required package: NLP
+
+Attaching package: ‘NLP’
+
+The following object is masked from ‘package:httr’:
+
+    content
+
+The following object is masked from ‘package:ggplot2’:
+
+    annotate
+
+...............Warning messages:
+1: In tm_map.SimpleCorpus(corpus_descriptions, removePunctuation) :
+  transformation drops documents
+2: In tm_map.SimpleCorpus(tm_map(corpus_descriptions, removePunctuation),  :
+  transformation drops documents
+3: In tm_map.SimpleCorpus(tm_map(tm_map(corpus_descriptions, removePunctuation),  :
+  transformation drops documents
+4: In tm_map.SimpleCorpus(tm_map(tm_map(tm_map(corpus_descriptions,  :
+  transformation drops documents
+5: In tm_map.SimpleCorpus(tm_map(tm_map(tm_map(tm_map(corpus_descriptions,  :
+  transformation drops documents
+6: In tm_map.SimpleCorpus(tm_map(tm_map(tm_map(tm_map(tm_map(corpus_descriptions,  :
+  transformation drops documents
+7: In tm_map.SimpleCorpus(tm_map(tm_map(tm_map(tm_map(tm_map(tm_map(corpus_descriptions,  :
+  transformation drops documents
+Error in abs_path(input) : 
+  The file '/home/pedro/index.Rmd' does not exist.
+Calls: <Anonymous> -> setwd -> dirname -> abs_path
+In addition: Warning message:
+In normalizePath(path, winslash = winslash, mustWork = mustWork) :
+  path[1]="/home/pedro/index.Rmd": No such file or directory
+Execution halted
+── Attaching packages ─────────────────────────────────────── tidyverse 1.3.0 ──
+✔ ggplot2 3.3.6     ✔ purrr   0.3.4
+✔ tibble  3.1.7     ✔ dplyr   1.0.9
+✔ tidyr   1.2.0     ✔ stringr 1.4.0
+✔ readr   2.1.2     ✔ forcats 0.5.1
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+Loading required package: xml2
+
+Attaching package: ‘rvest’
+
+The following object is masked from ‘package:purrr’:
+
+    pluck
+
+The following object is masked from ‘package:readr’:
+
+    guess_encoding
+
+Loading required package: wordcloud2
+Loading required package: tm
+Loading required package: NLP
+
+Attaching package: ‘NLP’
+
+The following object is masked from ‘package:httr’:
+
+    content
+
+The following object is masked from ‘package:ggplot2’:
+
+    annotate
+
+...............Error in `list_sizes()`:
+! `x$error` must be a vector, not a <simpleError/error/condition> object.
+Backtrace:
+     ▆
+  1. ├─dplyr::arrange(...)
+  2. ├─tidyr::unnest(unnest(listed_df, description), description)
+  3. ├─tidyr:::unnest.data.frame(unnest(listed_df, description), description)
+  4. │ └─tidyr::unchop(data, any_of(cols), keep_empty = keep_empty, ptype = ptype)
+  5. │   └─tidyr:::df_unchop(cols, ptype = ptype, keep_empty = keep_empty)
+  6. │     └─tidyr:::list_init_empty(x = col, null = TRUE, typed = keep_empty)
+  7. │       └─vctrs::list_sizes(x)
+  8. └─vctrs:::stop_scalar_type(`<fn>`(`<smplErrr>`), "x$error", `<env>`)
+  9.   └─vctrs:::stop_vctrs(...)
+ 10.     └─rlang::abort(message, class = c(class, "vctrs_error"), ..., call = vctrs_error_call(call))
+Execution halted
+── Attaching packages ─────────────────────────────────────── tidyverse 1.3.0 ──
+✔ ggplot2 3.3.6     ✔ purrr   0.3.4
+✔ tibble  3.1.7     ✔ dplyr   1.0.9
+✔ tidyr   1.2.0     ✔ stringr 1.4.0
+✔ readr   2.1.2     ✔ forcats 0.5.1
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+Loading required package: xml2
+
+Attaching package: ‘rvest’
+
+The following object is masked from ‘package:purrr’:
+
+    pluck
+
+The following object is masked from ‘package:readr’:
+
+    guess_encoding
+
+Loading required package: wordcloud2
+Loading required package: tm
+Loading required package: NLP
+
+Attaching package: ‘NLP’
+
+The following object is masked from ‘package:httr’:
+
+    content
+
+The following object is masked from ‘package:ggplot2’:
+
+    annotate
+
+...............Warning messages:
+1: In tm_map.SimpleCorpus(corpus_descriptions, removePunctuation) :
+  transformation drops documents
+2: In tm_map.SimpleCorpus(tm_map(corpus_descriptions, removePunctuation),  :
+  transformation drops documents
+3: In tm_map.SimpleCorpus(tm_map(tm_map(corpus_descriptions, removePunctuation),  :
+  transformation drops documents
+4: In tm_map.SimpleCorpus(tm_map(tm_map(tm_map(corpus_descriptions,  :
+  transformation drops documents
+5: In tm_map.SimpleCorpus(tm_map(tm_map(tm_map(tm_map(corpus_descriptions,  :
+  transformation drops documents
+6: In tm_map.SimpleCorpus(tm_map(tm_map(tm_map(tm_map(tm_map(corpus_descriptions,  :
+  transformation drops documents
+7: In tm_map.SimpleCorpus(tm_map(tm_map(tm_map(tm_map(tm_map(tm_map(corpus_descriptions,  :
+  transformation drops documents
+Error in abs_path(input) : 
+  The file '/home/pedro/index.Rmd' does not exist.
+Calls: <Anonymous> -> setwd -> dirname -> abs_path
+In addition: Warning message:
+In normalizePath(path, winslash = winslash, mustWork = mustWork) :
+  path[1]="/home/pedro/index.Rmd": No such file or directory
+Execution halted
+── Attaching packages ─────────────────────────────────────── tidyverse 1.3.0 ──
+✔ ggplot2 3.3.6     ✔ purrr   0.3.4
+✔ tibble  3.1.7     ✔ dplyr   1.0.9
+✔ tidyr   1.2.0     ✔ stringr 1.4.0
+✔ readr   2.1.2     ✔ forcats 0.5.1
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+Loading required package: xml2
+
+Attaching package: ‘rvest’
+
+The following object is masked from ‘package:purrr’:
+
+    pluck
+
+The following object is masked from ‘package:readr’:
+
+    guess_encoding
+
+Loading required package: wordcloud2
+Loading required package: tm
+Loading required package: NLP
+
+Attaching package: ‘NLP’
+
+The following object is masked from ‘package:httr’:
+
+    content
+
+The following object is masked from ‘package:ggplot2’:
+
+    annotate
+
+...............Error in `list_sizes()`:
+! `x$error` must be a vector, not a <simpleError/error/condition> object.
+Backtrace:
+     ▆
+  1. ├─dplyr::arrange(...)
+  2. ├─tidyr::unnest(unnest(listed_df, description), description)
+  3. ├─tidyr:::unnest.data.frame(unnest(listed_df, description), description)
+  4. │ └─tidyr::unchop(data, any_of(cols), keep_empty = keep_empty, ptype = ptype)
+  5. │   └─tidyr:::df_unchop(cols, ptype = ptype, keep_empty = keep_empty)
+  6. │     └─tidyr:::list_init_empty(x = col, null = TRUE, typed = keep_empty)
+  7. │       └─vctrs::list_sizes(x)
+  8. └─vctrs:::stop_scalar_type(`<fn>`(`<smplErrr>`), "x$error", `<env>`)
+  9.   └─vctrs:::stop_vctrs(...)
+ 10.     └─rlang::abort(message, class = c(class, "vctrs_error"), ..., call = vctrs_error_call(call))
+Execution halted
+── Attaching packages ─────────────────────────────────────── tidyverse 1.3.0 ──
+✔ ggplot2 3.3.6     ✔ purrr   0.3.4
+✔ tibble  3.1.7     ✔ dplyr   1.0.9
+✔ tidyr   1.2.0     ✔ stringr 1.4.0
+✔ readr   2.1.2     ✔ forcats 0.5.1
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+Loading required package: xml2
+
+Attaching package: ‘rvest’
+
+The following object is masked from ‘package:purrr’:
+
+    pluck
+
+The following object is masked from ‘package:readr’:
+
+    guess_encoding
+
+Loading required package: wordcloud2
+Loading required package: tm
+Loading required package: NLP
+
+Attaching package: ‘NLP’
+
+The following object is masked from ‘package:httr’:
+
+    content
+
+The following object is masked from ‘package:ggplot2’:
+
+    annotate
+
+Error in open.connection(x, "rb") : 
+  Could not resolve host: www.indeed.com
+Calls: read_html -> read_html.default
+Execution halted
+── Attaching packages ─────────────────────────────────────── tidyverse 1.3.0 ──
+✔ ggplot2 3.3.6     ✔ purrr   0.3.4
+✔ tibble  3.1.7     ✔ dplyr   1.0.9
+✔ tidyr   1.2.0     ✔ stringr 1.4.0
+✔ readr   2.1.2     ✔ forcats 0.5.1
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+Loading required package: xml2
+
+Attaching package: ‘rvest’
+
+The following object is masked from ‘package:purrr’:
+
+    pluck
+
+The following object is masked from ‘package:readr’:
+
+    guess_encoding
+
+Loading required package: wordcloud2
+Loading required package: tm
+Loading required package: NLP
+
+Attaching package: ‘NLP’
+
+The following object is masked from ‘package:httr’:
+
+    content
+
+The following object is masked from ‘package:ggplot2’:
+
+    annotate
+
+...............Warning messages:
+1: In for (i in seq_along(specs)) { :
+  closing unused connection 3 (https://www.indeed.com/rc/clk?jk=bafba9cff1dec5ab&fccid=4d297a7bcd1c7be4&vjs=3)
+2: In for (i in seq_along(specs)) { :
+  closing unused connection 3 (https://www.indeed.com/rc/clk?jk=730812239c80d3c3&fccid=01b550b2fa839455&vjs=3)
+Error in `list_sizes()`:
+! `x$error` must be a vector, not a <simpleError/error/condition> object.
+Backtrace:
+     ▆
+  1. ├─dplyr::arrange(...)
+  2. ├─tidyr::unnest(unnest(listed_df, description), description)
+  3. ├─tidyr:::unnest.data.frame(unnest(listed_df, description), description)
+  4. │ └─tidyr::unchop(data, any_of(cols), keep_empty = keep_empty, ptype = ptype)
+  5. │   └─tidyr:::df_unchop(cols, ptype = ptype, keep_empty = keep_empty)
+  6. │     └─tidyr:::list_init_empty(x = col, null = TRUE, typed = keep_empty)
+  7. │       └─vctrs::list_sizes(x)
+  8. └─vctrs:::stop_scalar_type(`<fn>`(`<smplErrr>`), "x$error", `<env>`)
+  9.   └─vctrs:::stop_vctrs(...)
+ 10.     └─rlang::abort(message, class = c(class, "vctrs_error"), ..., call = vctrs_error_call(call))
+Execution halted
+── Attaching packages ─────────────────────────────────────── tidyverse 1.3.0 ──
+✔ ggplot2 3.3.6     ✔ purrr   0.3.4
+✔ tibble  3.1.7     ✔ dplyr   1.0.9
+✔ tidyr   1.2.0     ✔ stringr 1.4.0
+✔ readr   2.1.2     ✔ forcats 0.5.1
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+Loading required package: xml2
+
+Attaching package: ‘rvest’
+
+The following object is masked from ‘package:purrr’:
+
+    pluck
+
+The following object is masked from ‘package:readr’:
+
+    guess_encoding
+
+Loading required package: wordcloud2
+Loading required package: tm
+Loading required package: NLP
+
+Attaching package: ‘NLP’
+
+The following object is masked from ‘package:httr’:
+
+    content
+
+The following object is masked from ‘package:ggplot2’:
+
+    annotate
+
+...............Warning messages:
+1: In tm_map.SimpleCorpus(corpus_descriptions, removePunctuation) :
+  transformation drops documents
+2: In tm_map.SimpleCorpus(tm_map(corpus_descriptions, removePunctuation),  :
+  transformation drops documents
+3: In tm_map.SimpleCorpus(tm_map(tm_map(corpus_descriptions, removePunctuation),  :
+  transformation drops documents
+4: In tm_map.SimpleCorpus(tm_map(tm_map(tm_map(corpus_descriptions,  :
+  transformation drops documents
+5: In tm_map.SimpleCorpus(tm_map(tm_map(tm_map(tm_map(corpus_descriptions,  :
+  transformation drops documents
+6: In tm_map.SimpleCorpus(tm_map(tm_map(tm_map(tm_map(tm_map(corpus_descriptions,  :
+  transformation drops documents
+7: In tm_map.SimpleCorpus(tm_map(tm_map(tm_map(tm_map(tm_map(tm_map(corpus_descriptions,  :
+  transformation drops documents
+Error in abs_path(input) : 
+  The file '/home/pedro/index.Rmd' does not exist.
+Calls: <Anonymous> -> setwd -> dirname -> abs_path
+In addition: Warning message:
+In normalizePath(path, winslash = winslash, mustWork = mustWork) :
+  path[1]="/home/pedro/index.Rmd": No such file or directory
+Execution halted
+── Attaching packages ─────────────────────────────────────── tidyverse 1.3.0 ──
+✔ ggplot2 3.3.6     ✔ purrr   0.3.4
+✔ tibble  3.1.7     ✔ dplyr   1.0.9
+✔ tidyr   1.2.0     ✔ stringr 1.4.0
+✔ readr   2.1.2     ✔ forcats 0.5.1
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+Loading required package: xml2
+
+Attaching package: ‘rvest’
+
+The following object is masked from ‘package:purrr’:
+
+    pluck
+
+The following object is masked from ‘package:readr’:
+
+    guess_encoding
+
+Loading required package: wordcloud2
+Loading required package: tm
+Loading required package: NLP
+
+Attaching package: ‘NLP’
+
+The following object is masked from ‘package:httr’:
+
+    content
+
+The following object is masked from ‘package:ggplot2’:
+
+    annotate
+
+...............Error in `list_sizes()`:
+! `x$error` must be a vector, not a <simpleError/error/condition> object.
+Backtrace:
+     ▆
+  1. ├─dplyr::arrange(...)
+  2. ├─tidyr::unnest(unnest(listed_df, description), description)
+  3. ├─tidyr:::unnest.data.frame(unnest(listed_df, description), description)
+  4. │ └─tidyr::unchop(data, any_of(cols), keep_empty = keep_empty, ptype = ptype)
+  5. │   └─tidyr:::df_unchop(cols, ptype = ptype, keep_empty = keep_empty)
+  6. │     └─tidyr:::list_init_empty(x = col, null = TRUE, typed = keep_empty)
+  7. │       └─vctrs::list_sizes(x)
+  8. └─vctrs:::stop_scalar_type(`<fn>`(`<smplErrr>`), "x$error", `<env>`)
+  9.   └─vctrs:::stop_vctrs(...)
+ 10.     └─rlang::abort(message, class = c(class, "vctrs_error"), ..., call = vctrs_error_call(call))
+Execution halted
+── Attaching packages ─────────────────────────────────────── tidyverse 1.3.0 ──
+✔ ggplot2 3.3.6     ✔ purrr   0.3.4
+✔ tibble  3.1.7     ✔ dplyr   1.0.9
+✔ tidyr   1.2.0     ✔ stringr 1.4.0
+✔ readr   2.1.2     ✔ forcats 0.5.1
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+Loading required package: xml2
+
+Attaching package: ‘rvest’
+
+The following object is masked from ‘package:purrr’:
+
+    pluck
+
+The following object is masked from ‘package:readr’:
+
+    guess_encoding
+
+Loading required package: wordcloud2
+Loading required package: tm
+Loading required package: NLP
+
+Attaching package: ‘NLP’
+
+The following object is masked from ‘package:httr’:
+
+    content
+
+The following object is masked from ‘package:ggplot2’:
+
+    annotate
+
+...............Warning message:
+In for (i in seq_along(specs)) { :
+  closing unused connection 3 (https://www.indeed.com/rc/clk?jk=730812239c80d3c3&fccid=01b550b2fa839455&vjs=3)
+Error in `list_sizes()`:
+! `x$error` must be a vector, not a <simpleError/error/condition> object.
+Backtrace:
+     ▆
+  1. ├─dplyr::arrange(...)
+  2. ├─tidyr::unnest(unnest(listed_df, description), description)
+  3. ├─tidyr:::unnest.data.frame(unnest(listed_df, description), description)
+  4. │ └─tidyr::unchop(data, any_of(cols), keep_empty = keep_empty, ptype = ptype)
+  5. │   └─tidyr:::df_unchop(cols, ptype = ptype, keep_empty = keep_empty)
+  6. │     └─tidyr:::list_init_empty(x = col, null = TRUE, typed = keep_empty)
+  7. │       └─vctrs::list_sizes(x)
+  8. └─vctrs:::stop_scalar_type(`<fn>`(`<smplErrr>`), "x$error", `<env>`)
+  9.   └─vctrs:::stop_vctrs(...)
+ 10.     └─rlang::abort(message, class = c(class, "vctrs_error"), ..., call = vctrs_error_call(call))
+Execution halted
+── Attaching packages ─────────────────────────────────────── tidyverse 1.3.0 ──
+✔ ggplot2 3.3.6     ✔ purrr   0.3.4
+✔ tibble  3.1.7     ✔ dplyr   1.0.9
+✔ tidyr   1.2.0     ✔ stringr 1.4.0
+✔ readr   2.1.2     ✔ forcats 0.5.1
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+Loading required package: xml2
+
+Attaching package: ‘rvest’
+
+The following object is masked from ‘package:purrr’:
+
+    pluck
+
+The following object is masked from ‘package:readr’:
+
+    guess_encoding
+
+Loading required package: wordcloud2
+Loading required package: tm
+Loading required package: NLP
+
+Attaching package: ‘NLP’
+
+The following object is masked from ‘package:httr’:
+
+    content
+
+The following object is masked from ‘package:ggplot2’:
+
+    annotate
+
+Error in open.connection(x, "rb") : 
+  Could not resolve host: www.indeed.com
+Calls: read_html -> read_html.default
+Execution halted
