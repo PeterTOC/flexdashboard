@@ -51,6 +51,8 @@ Summary of layout;
 
 Tech Stack: R, Git, Github
 
+Here is a link to the [published dashboard!](https://petertoc.github.io/flexdashboard/)
+
 NOTE: Web scraping should always be done as a last resort, APIs and databases, when available, is always the way to go.
 
 ![wordcloud](https://github.com/PeterTOC/flexdashboard/blob/master/docs/webshot.png)
